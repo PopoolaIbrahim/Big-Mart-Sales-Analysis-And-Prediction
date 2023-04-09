@@ -111,7 +111,8 @@ if (selected == 'Sales Analysis'):
     
     #Image
     st.image('icon-chart.jpg', width=100)
-
+    
+    st.write("Loading the Dataset")
 
 
     
