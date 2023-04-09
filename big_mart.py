@@ -31,7 +31,7 @@ if (selected == 'Big Mart Sales Prediction'):
     st.title('Sales Prediction using ML')
     
     #Image
-    st.image('hero.jpg')
+    st.image('big_mart_image.jpg')
     
     # getting the input data from the user
     col1, col2 = st.columns(2)
