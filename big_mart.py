@@ -107,7 +107,7 @@ if (selected == 'Sales Prediction'):
 if (selected == 'Sales Analysis'):
     
     # page title
-    st.title('Sales Analysis')
+    st.title('Sales Analysis popoola')
     
     #Image
     st.image('icon-chart.jpg', width=100)
