@@ -17,15 +17,15 @@ model = pickle.load(open('big_mart_model.pkl', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Sales Prediction System', #Title of the OptionMenu
+    selected = option_menu('Big Mart Sales', #Title of the OptionMenu
                           
-                          ['Big Mart Sales Prediction','Big Mart Sales Analysis'], #You can add more options to the sidebar
+                          ['Sales Prediction','Sales Analysis'], #You can add more options to the sidebar
                           icons=['shop', 'graph-up-arrow'], #BootStrap Icons - Add more depending on the number of sidebar options you have.
                           default_index=0) #Default side bar selection
     
     
 # Sales Prediction Page
-if (selected == 'Big Mart Sales Prediction'):
+if (selected == 'Sales Prediction'):
     
     # page title
     st.title('Sales Prediction using ML')
@@ -102,7 +102,15 @@ if (selected == 'Big Mart Sales Prediction'):
         sales_prediction_output = f"The sales is predicted to be {sales_prediction}"
         st.success(sales_prediction_output)
 
-
+        
+# Sales Prediction Page
+if (selected == 'Sales Analysis'):
+    
+    # page title
+    st.title('Sales Analysis')
+    
+    #Image
+    st.image('icon-chart.jpg')
 
 
 
