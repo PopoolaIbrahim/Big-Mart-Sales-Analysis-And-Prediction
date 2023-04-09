@@ -20,7 +20,7 @@ with st.sidebar:
     selected = option_menu('Big Mart Sales', #Title of the OptionMenu
                           
                           ['Sales Prediction','Sales Analysis'], #You can add more options to the sidebar
-                          icons=['shop', 'graph-up-arrow'], #BootStrap Icons - Add more depending on the number of sidebar options you have.
+                          icons=['robot', 'graph-up-arrow'], #BootStrap Icons - Add more depending on the number of sidebar options you have.
                           default_index=0) #Default side bar selection
     
     
