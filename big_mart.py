@@ -107,12 +107,12 @@ if (selected == 'Sales Prediction'):
 if (selected == 'Sales Analysis'):
     
     # page title
-    st.title('Sales Analysis popoola')
+    st.title('Sales Analysis')
     
     #Image
     st.image('icon-chart.jpg', width=100)
     
-    st.write("<h1>Loading the Dataset</h1>")
+    st.write("Loading the Dataset")
     
     df = pd.read_csv("clean_mart_data.csv")
     
