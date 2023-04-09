@@ -113,6 +113,10 @@ if (selected == 'Sales Analysis'):
     st.image('icon-chart.jpg', width=100)
     
     st.write("Loading the Dataset")
+    
+    df = pd.read_csv("clean_mart_data.csv")
+    
+    st.write(df)
 
 
     
