@@ -110,7 +110,7 @@ if (selected == 'Sales Analysis'):
     st.title('Sales Analysis')
     
     #Image
-    st.image('icon-chart.jpg' width="300" height="300")
+    st.image('icon-chart.jpg' width=200)
 
 
 
