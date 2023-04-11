@@ -111,15 +111,12 @@ if (selected == 'Sales Analysis'):
     
     #Image
     st.image('icon-chart.jpg', width=100)
-    st.checkbox("Reveal data")
-    st.write("Loading the Dataset.......")
-    
     df = pd.read_csv("clean_mart_data.csv")
-    
-    st.write(df)
-
-
-    
-
-
-
+    checkbox = st.checkbox("Show Dataset")
+    if checkbox:
+        st.dataframe(data=df)
+        
+        
+        
+        
+        
