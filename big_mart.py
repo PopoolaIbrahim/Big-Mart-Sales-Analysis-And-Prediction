@@ -111,7 +111,7 @@ if (selected == 'Sales Analysis'):
     
     #Image
     st.image('icon-chart.jpg', width=100)
-    
+    st.sidebar.checkbox("Reveal data")
     st.write("Loading the Dataset.......")
     
     df = pd.read_csv("clean_mart_data.csv")
