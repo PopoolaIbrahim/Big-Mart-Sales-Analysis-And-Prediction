@@ -3,7 +3,7 @@
 """
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder, OneHotEncoder
-
+import seaborn as sns
 
 import pickle
 import streamlit as st
@@ -103,7 +103,8 @@ if (selected == 'Sales Prediction'):
         st.success(sales_prediction_output)
 
         
-# Sales Prediction Page
+# Sales Analysis Page
+sns.set_style('darkgrid')
 if (selected == 'Sales Analysis'):
     
     # page title
@@ -112,10 +113,17 @@ if (selected == 'Sales Analysis'):
     #Image
     st.image('icon-chart.jpg', width=100)
     df = pd.read_csv("clean_mart_data.csv")
+    numeric_columns = df.select_dtypes(['float64', 'float32', 'int64', 'int32']).columns
     checkbox = st.checkbox("Show Dataset")
     if checkbox:
         st.dataframe(data=df)
     st.subheader("Scatter Plot Setting")
+    select_box_1 = st.selectbox(label="X axis", options=numeric_columns)
+    select box_2 = st.selectbox(label="y axis", options=numeric_columns)
+    sns.relplot(x=select_box_1, y=select_box_2, data=data)
+    st.pyplot()
+
+
         
         
         
