@@ -121,8 +121,10 @@ if (selected == 'Sales Analysis'):
     select_box_1 = st.selectbox(label="X axis", options=numeric_columns)
     select_box_2 = st.selectbox(label="y axis", options=numeric_columns)
     sns.relplot(x=select_box_1, y=select_box_2, data=df)
-    st.pyplot()
     st.subheader("Scatter Plot :")
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    st.pyplot()
+    
 
 
         
