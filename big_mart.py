@@ -115,6 +115,7 @@ if (selected == 'Sales Analysis'):
     checkbox = st.checkbox("Show Dataset")
     if checkbox:
         st.dataframe(data=df)
+    st.subheader("Scatter Plot Setting")
         
         
         
